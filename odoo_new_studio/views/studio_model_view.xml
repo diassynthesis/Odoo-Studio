@@ -1,0 +1,33 @@
+<odoo>
+    <record id="studio_model_action" model="ir.actions.act_window">
+        <field name="name">Models</field>
+        <field name="res_model">studio.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="studio_model_tree_view" model="ir.ui.view">
+        <field name="name">studio.model.tree</field>
+        <field name="model">studio.model</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="model_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="studio_model_form_view" model="ir.ui.view">
+        <field name="name">studio.model.form</field>
+        <field name="model">studio.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="model_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

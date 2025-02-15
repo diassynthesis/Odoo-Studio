@@ -1,0 +1,7 @@
+<odoo>
+    <record id="studio_access_action" model="ir.actions.act_window">
+        <field name="name">Access Control</field>
+        <field name="res_model">studio.access</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

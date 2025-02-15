@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Tree View -->
+    <record id="view_studio_main_tree" model="ir.ui.view">
+        <field name="name">studio.main.tree</field>
+        <field name="model">studio.main</field>
+        <field name="arch" type="xml">
+            <tree string="Studio Main">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_studio_main_form" model="ir.ui.view">
+        <field name="name">studio.main.form</field>
+        <field name="model">studio.main</field>
+        <field name="arch" type="xml">
+            <form string="Studio Main">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <div id="studio-root"></div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Window Action -->
+    <record id="studio_main_action" model="ir.actions.act_window">
+        <field name="name">Studio Main</field>
+        <field name="res_model">studio.main</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_studio_main_tree"/>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="studio_main_menu" name="Studio Main" parent="studio_root_menu" action="studio_main_action"/>
+
+</odoo>

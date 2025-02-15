@@ -1,0 +1,11 @@
+<odoo>
+	<!--Good File-->
+    <record id="studio_view_builder_action" model="ir.actions.act_window">
+        <field name="name">View Builder</field>
+        <field name="res_model">studio.view</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="studio_view_builder_menu" name="View Builder"
+              parent="studio_root_menu" action="studio_view_builder_action"/>
+</odoo>

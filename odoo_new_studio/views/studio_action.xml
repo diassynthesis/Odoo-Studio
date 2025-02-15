@@ -1,0 +1,7 @@
+<odoo>
+    <record id="studio_model_action" model="ir.actions.act_window">
+        <field name="name">Studio Models</field>
+        <field name="res_model">studio.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

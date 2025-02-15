@@ -1,0 +1,4 @@
+.o_studio {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
