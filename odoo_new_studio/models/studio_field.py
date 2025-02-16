@@ -10,6 +10,7 @@ class StudioField(models.Model):
         ('integer', 'Integer'),
         ('float', 'Float'),
         ('boolean', 'Boolean'),
+        ('date', 'Datet'),
         ('datetime', 'Datetime'),
         ('text', 'Text'),
         ('selection', 'Selection'),
