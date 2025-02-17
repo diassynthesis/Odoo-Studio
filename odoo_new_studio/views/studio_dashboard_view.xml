@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_studio_dashboard_form" model="ir.ui.view">
+        <field name="name">studio.dashboard.form</field>
+        <field name="model">studio.dashboard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <button name="action_create_new_app" type="object" string="Create New App" class="btn-primary"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

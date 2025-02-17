@@ -1,0 +1,19 @@
+<t t-name="odoo_new_studio.ViewBuilder">
+    <div class="view-builder">
+        <h2>Drag & Drop Fields</h2>
+        <div class="fields-list">
+            <t t-foreach="state.availableFields" t-as="field">
+                <DraggableField field="field"/>
+            </t>
+        </div>
+        <DropZone onDropField="onDropField"/>
+        <div class="selected-fields">
+            <t t-foreach="state.selectedFields" t-as="field" t-key="field.id">
+                <div class="field-box">
+                    <span t-esc="field.name"/>
+                    <button t-on-click="() => removeField(loop.index)">X</button>
+                </div>
+            </t>
+        </div>
+    </div>
+</t>

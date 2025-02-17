@@ -4,6 +4,9 @@
     <menuitem id="studio_fields_menu" name="Fields" parent="studio_root_menu" action="studio_field_action"/>
     <menuitem id="studio_automations_menu" name="Automations" parent="studio_root_menu" action="studio_automation_action"/>
     <menuitem id="studio_access_menu" name="Access Control" parent="studio_root_menu" action="studio_access_action"/>
-    <!--menuitem id="studio_main_menu" name="Studio Main" parent="studio_root_menu" action="studio_main_action"/>
-    <menuitem id="studio_template_menu" name="Templates" parent="studio_root_menu" action="studio_template_action"  sequence="2"/-->
+    <!--menuitem id="studio_report_menu" name="Reports" parent="studio_root_menu" action="studio_report_action"/-->
+    <menuitem id="studio_new_app_menu" name="Create New App" parent="studio_main_menu" action="new_app_wizard_action"/>
+    <menuitem id="studio_view_builder_menu" name="View Builder" parent="studio_main_menu" action="studio_view_builder_action"/>
+    <!--menuitem id="studio_main_menu" name="Studio Main" parent="studio_root_menu" action="studio_main_action"/-->
+    <!--menuitem id="studio_template_menu" name="Templates" parent="studio_root_menu" action="studio_template_action"  sequence="2"/-->
 </odoo>
