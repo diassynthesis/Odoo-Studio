@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_builder_tree_view" model="ir.ui.view">
+        <field name="name">studio.view.builder.tree</field>
+        <field name="model">studio.view.builder</field>
+        <field name="arch" type="xml">
+            <tree string="View Builder">
+                <field name="name"/>
+                <field name="model_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="studio_view_builder_form" model="ir.ui.view">
+        <field name="name">studio.view.builder.form</field>
+        <field name="model">studio.view.builder</field>
+        <field name="arch" type="xml">
+            <form string="View Builder">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="model_id"/>
+                        <field name="view_type"/>
+                        <!--field name="arch" widget="monospaced"/-->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="studio_view_builder_action" model="ir.actions.act_window">
+		<field name="name">View Builder</field>
+		<field name="res_model">ir.ui.view</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="studio_view_builder_form"/>
+	</record>
+</odoo>

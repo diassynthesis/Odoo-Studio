@@ -1,0 +1,19 @@
+<odoo>
+    <record id="studio_model_action" model="ir.actions.act_window">
+        <field name="name">Studio Models</field>
+        <field name="res_model">studio.model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>
+                Create and manage models dynamically in Studio.
+            </p>
+        </field>
+    </record>
+    
+    <record id="new_app_wizard_action" model="ir.actions.act_window">
+        <field name="name">Create New App</field>
+        <field name="res_model">studio.new.app.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

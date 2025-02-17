@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="StudioRoot" name="Studio Root">
+        <div class="studio-root">
+            <!-- Sidebar Navigation -->
+            <div class="studio-sidebar">
+                <button t-on-click="() => setActiveMenu('dashboard')">Dashboard</button>
+                <button t-on-click="() => setActiveMenu('templates')">Templates</button>
+                <button t-on-click="() => setActiveMenu('views')">Views</button>
+                <button t-on-click="() => setActiveMenu('automations')">Automations</button>
+            </div>
+
+            <!-- Main Content -->
+            <div class="studio-content">
+                <t t-if="state.activeMenu === 'dashboard'">
+                    <h2>Dashboard</h2>
+                    <p>Welcome to Odoo Studio.</p>
+                </t>
+                <t t-if="state.activeMenu === 'templates'">
+                    <h2>Templates</h2>
+                    <p>Manage your templates here.</p>
+                </t>
+                <t t-if="state.activeMenu === 'views'">
+                    <h2>Views</h2>
+                    <p>Customize views here.</p>
+                </t>
+                <t t-if="state.activeMenu === 'automations'">
+                    <h2>Automations</h2>
+                    <p>Configure automation rules here.</p>
+                </t>
+            </div>
+        </div>
+    </template>
+</odoo>
