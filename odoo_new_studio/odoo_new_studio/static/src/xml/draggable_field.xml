@@ -1,5 +1,0 @@
-<t t-name="odoo_new_studio.DraggableField">
-    <div class="draggable-field" draggable="true" t-on-dragstart="onDragStart">
-        <span t-esc="props.field.name"/>
-    </div>
-</t>

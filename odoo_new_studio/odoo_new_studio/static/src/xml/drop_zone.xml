@@ -1,5 +1,0 @@
-<t t-name="odoo_new_studio.DropZone">
-    <div class="drop-zone" t-on-drop="onDrop" t-on-dragover="allowDrop">
-        <span>Drop Here</span>
-    </div>
-</t>
