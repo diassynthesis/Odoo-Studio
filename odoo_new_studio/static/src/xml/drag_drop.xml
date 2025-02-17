@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="odoo_new_studio.DragDrop">
+        <div class="drag-drop-container">
+            <div class="drag-items">
+                <t t-foreach="items" t-as="item">
+                    <div class="drag-item"
+                        t-att-data-id="item.id"
+                        t-on-dragstart="onDragStart($event, item)"
+                        draggable="true">
+                        <t t-esc="item.name"/>
+                    </div>
+                </t>
+            </div>
+            <div class="drop-area"
+                t-on-dragover="($event) => $event.preventDefault()"
+                t-on-drop="onDrop($event)">
+                Drop Here
+            </div>
+        </div>
+    </t>
+</templates>

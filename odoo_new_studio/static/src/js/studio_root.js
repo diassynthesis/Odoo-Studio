@@ -1,6 +1,7 @@
 /** @odoo-module **/
 
-import { Component, useState } from "@odoo/owl";
+//import { Component, useState } from "@odoo/owl";
+var { Component, mount } = owl; // OWL is globally available
 
 export class StudioRoot extends Component {
     setup() {
