@@ -2,7 +2,7 @@ from odoo import models, fields #good file
 
 class StudioViewBuilder(models.Model):
     _name = 'studio.view.builder'
-    _inherit = 'studio.view'
+#   _inherit = 'studio.view'
     _description = 'Studio View Builder'
 
     name = fields.Char(string="View Name", required=True)
